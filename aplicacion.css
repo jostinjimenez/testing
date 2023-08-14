@@ -1,0 +1,21 @@
+.contenedor {
+    text-align: center; /* Centra horizontalmente el contenido */
+    border: 3px;
+    padding-bottom: 5%;
+}
+
+p img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
