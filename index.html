@@ -1,4 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+<head>
+    <meta charset="UTF-8">
+
+    <title>Competition Sport</title>
+
+    <link href="assets/img/icon.png" rel="icon">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Sen:wght@500&display=swap"
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+
+   
+
+    <style>
+        body {
+            font-family: CentraNube, system-ui, BlinkMacSystemFont, Helvetica Neue, arial, sans-serif;
+        }
+    </style>
+</head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/icon.png" alt="Logo" width="50" height="50">
+      PlayOffPro
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="funciones.html">Funcionalidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="diagramaSecuencial.html">Diagramas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aportes.html">Aportes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+      window.addEventListener("scroll", function () {
+          var featuresSections = document.querySelectorAll(".features-section");
+
+          featuresSections.forEach(function (section) {
+              if (window.scrollY > section.offsetTop - window.innerHeight / 40) {
+                  section.classList.add("scrolled");
+                  section.classList.remove("scrolled-up");
+              } else {
+                  section.classList.remove("scrolled");
+                  section.classList.add("scrolled-up");
+              }
+          });
+      });
+  </script>
+
+  <section id="hero" class="clearfix">
+      <div class="container" data-aos="fade-up">
+
+          <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+              <img src="assets/img/icon.png" alt="" class="img-fluid rounded-image">
+          </div>
+
+          <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+              <h1>Welcome<br><span>to</span><br>PlayOffProo</h1>
+          </div>
+      </div>
+  </section>
+
+  <div class="section-container rounded-section pt-3 mt-5">
+      <section class="mt-5 mb-5 px-4 features-section">
+          <div class="row about-extra">
+              <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                  <img src="assets/img/imgDescription.png" class="img-fluid rounded-image" alt="">
+              </div>
+              <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+                  <h2>Description</h2>
+                  <p class="feature-description">
+                      This web application was created in order to be able to manage sports competitions, in which
+                      they can register teams, players, competitions and matches. In addition, you can view the table
+                      of
+                      positions of each competition and the results of the matches.
+                  </p>
+                  <p class="feature-description">
+                      The application was developed with the Django framework, which is a framework that is based on
+                      the
+                      model-view-template architecture, which allows the separation of the logic of the application
+                      from the
+                      presentation of the data. In addition, it has a database in which the data of the teams,
+                      players, competitions and matches are stored.
+                  </p>
+              </div>
+          </div>
+      </section>
+  </div>
+
+
+  <h2 class="text-center mt-5">Features</h2>
+
+  <section class="mt-5 mb-5 px-4 features-section">
+      <div class="row about-extra">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/Captura de pantalla 2023-08-15 182214.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/Captura de pantalla 2023-08-15 183301.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/Captura de pantalla 2023-08-15 183447.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img//Captura de pantalla 2023-08-15 183950.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/Captura de pantalla 2023-08-15 183722.png" class="d-block w-100" alt="...">
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2" data-aos="fade-right">
+              <h3>Create your own sporting event</h3>
+              <p class="feature-description">
+                  Imagine the excitement of designing and hosting your own soccer tournament, basketball competition,
+                  track meet, or any other sporting event you love. From the choice of location and dates, to the
+                  selection
+                  of teams or participants, every detail is in your hands.
+              </p>
+              <p class="feature-description">
+                  Our application offers you an intuitive and easy-to-use interface that will guide you through each
+                  step of the process. You can customize the rules, set the prizes and trophies, invite your friends
+                  and family, and watch the action unfold in real time through live updates and real-time statistics.
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <section class="mt-5 mb-5 px-4 features-section">
+      <div class="row about-extra">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+              <img src="assets/img/Captura de pantalla 2023-08-15 185040.png" class="img-fluid rounded-image" alt="">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+              <h3>Times and dates for competitions</h3>
+              <p class="feature-description">
+                  You can also choose the location, dates, and times of your event. Whether you want to host a
+                  tournament in your own backyard or in a professional stadium, our app gives you the flexibility
+                  to choose the perfect venue.
+              </p>
+
+          </div>
+      </div>
+  </section>
+
+  <section class="mt-5 mb-5 px-4 features-section">
+      <div class="row about-extra">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left">
+              <img src="assets/img/Captura de pantalla 2023-08-15 185714.png" class="img-fluid rounded-image" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2" data-aos="fade-right">
+              <h3>Wide range of sports for competitions</h3>
+              <p class="feature-description">
+                  Explore a wide range of sports and activities available for your events. Whether you prefer soccer,
+                  basketball, volleyball, or even more unique activities like obstacle courses, you can customize
+                  each event to suit your sports interests and passions.
+              </p>
+          </div>
+      </div>
+  </section>
+
+
+  <div id="sport-News-Title" class="mt-6">
+      <h2>Somes sport news</h2>
+
+      <div id="wg-api-football-games">
+          data-host="v3.football.api-sports.io"
+          data-key="0304c43f05msh6c69f0df2b39183p1b067fjsn902b7105573f"
+          data-date=""
+          data-league=""
+          data-season=""
+          data-theme=""
+          data-refresh="15"
+          data-show-toolbar="true"
+          data-show-errors="false"
+          data-show-logos="true"
+          data-modal-game="true"
+          data-modal-standings="true"
+          data-modal-show-logos="true"
+      </div>
+      <br>
+  </div>
+
+  <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="assets/img/icon.png" alt="PlayOffPro">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>WORK TEAM</h2>
+              <li><a href="https://jostinjimenez.github.io/Perfil/">Jostin Jimenez</a></li>
+              <li><a href="https://jhostin08.github.io/">Jhostin Rojas</a></li>
+              <li><a href="https://geovannyisma.github.io/">Geovanny Romero</a></li>
+              <li><a href="https://jalverca.github.io/">Juan Alverca</a></li>
+          </div>
+
+          <div class="box">
+              <h2>FOLLOW US</h2>
+              <div class="red-social">
+                  <a href="https://www.facebook.com/profile.php?id=61550300878142" class="fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/playoffpro11/" class="fa fa-instagram"></a>
+                  <a href="https://twitter.com/PlayOffPro11" class="fa fa-twitter"></a>
+              </div>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>© 2021 <b>PlayoffPro. </b> All rights reserved.</small>
+      </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>
